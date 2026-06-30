@@ -2,7 +2,7 @@ self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open('nckh-store').then((cache) => cache.addAll([
             'index.html', // File mới đã sửa
-            'lang-bac.glb' // File mô hình 3D chính xác
+            'model.glb' // File mô hình 3D chính xác
         ]))
     );
 });
